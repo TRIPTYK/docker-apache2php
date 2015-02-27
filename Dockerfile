@@ -1,6 +1,8 @@
 FROM phusion/baseimage:latest
 MAINTAINER Vrakfall <jeremy@artphotolaurent.be>
 
+RUN mkdir /var/www/html
+
 RUN apt-get update && \
   apt-get -y install \
     apache2 \
